@@ -5,7 +5,7 @@ from ..items import AmazontutorialItem
 class AmazonSpiderSpider(scrapy.Spider):
     name = 'amazon_spider'
     #allowed_domains = ['amazon.com']
-    start_urls = ['https://www.amazon.in']
+    start_urls = ['https://www.amazon.in/s?k=books']
 
     def parse(self, response):
         items = AmazontutorialItem()
